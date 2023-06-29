@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+:root{
+  --cor--branca: #FFF;
+  --cor--preta: #000;
+  --background-menu: rgba(0, 0, 0, 0.6);
+  --background-sessao1: rgba(0, 0, 0, 0.5);
+}
+
+/* Torna o background do navbar transparente */
+.navbar {
+  z-index: 5;
+  background-color: transparent;
+  transition: 1s;
+}
+
+.navbar-nav .nav-link.active {
+  text-transform: uppercase;
+  color: var(--cor--branca);
+  margin-left: 10px; 
+  padding-top: 10px;
+}
+
+/* FAZ O EFEITO DE TROCAR O BACKGROUND QUANDO ROLA A TELA */
+.onTop {
+  background: var(--background-menu)
+}
+
+/* COLOCA BORDER BOTTOM NOS MENUS E MUDA A COR */
+.nav-link {
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid var(--cor--branca);
+  transition: 0.6s;
+}
+
+.navbar-nav .nav-link.active:hover {
+  color: var(--cor--branca);
+  transition: 0.6s;
+}
+
+/* ANIMAÇÃO DO DATA ANIME */
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/* SESSÃO 1 ------------------------------------------------ */
+
+.sessao_inicial div.background-sessao{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.sessao_inicial div.background-sessao video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sessao_inicial div.box{
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding: 0 0 80px 20px;
+  color: var(--cor--branca);
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  background: var(--background-sessao1);
+}
+
+.logo_empresa{
+  margin-top: 30px;
+}
+
+.logo_main{
+  width: 100px;
+}
+
+/* .texto_sessao1{
+  text-align: center;
+  margin-top: -50px;
+} */
+
+
+/* .sessao1 {
+  background-image: url("../images/bg_black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.box_sessao1{
+  min-height: 75vh;
+}
+
+.logo_empresa{
+  margin-top: 30px;
+}
+
+.logo_main{
+  width: 100px;
+}
+
+.texto_sessao1{
+  text-align: center;
+  margin-top: -50px;
+} */
+
+/* fazendo a imagem desaparecer */
+#logo_main {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* fazendo a logo aparecer */
+#logo_menu {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  margin: 5px 0 0 5px;
+  width: 40px;
+}
+
+#meuTexto {
+  color: var(--cor--branca);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1s, transform 1s;
+}
+
+/* SESSÃO 3 ------------------------------------------------*/
+.sessao3 {
+  background-image: url("../images/bg_black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--cor--branca);
+  min-height: 100vh;
+}
+
+.titulo_descricao_sessao3{
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.paragrafo_descricao_sessao3{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.titulo_lista{
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.sessao3 ul li{
+  list-style: none;
+}
+
+
+/* SESSÃO 4 ------------------------------------------------ */
+
+.paragrafo_sessao4{
+  margin: 0 20px; 
+  text-transform: uppercase; 
+  font-size: 14px;
+}
+
+.descricao_sessao4 h2{
+  color: var(--cor-preta);
+  font-weight: 300; 
+  text-align: center;
+}
+
+.carousel-image{
+  width: 500px;
+  height: 250px;
+  padding: 50px;
+}
+
+/* SESSÃO 5 */
+
+.sessao5{
+  background-image: url("../images/bg_black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center;
+}
+
+.titulo_sessao5{
+  color: var(--cor--branca);
+  font-size: 55px;
+}
+
+.box_sessao5{
+  min-height: 50vh;
+}
+
+.marca_fset{
+  padding-bottom: 40px;
+}
+
+/* SESSÃO 6 */
+
+.sessao6{
+  background-image: url("../images/bg_white.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  border-bottom: 1px solid var(--cor--preta);
+  padding: 50px 0px;
+}
+
+.gallery{
+  padding: 40px 0;
+}
+
+.gallery img{
+  width: 250px;
+  height: 250px;
+}
+
+.carousel-indicators{
+  padding: 40px 0 0 0;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  width: 6%;
+}
+
+.modal-content{
+  width: 500px;
+}
+
+.container-lg img{
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.modal-img{
+  width: 100%;
+}
+
+.modal-body{
+  max-width: 100%;
+}
+
+.modal-content{
+  min-width: 800px;
+}
+
+.footer{
+  background-image: url("../images/bg_black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--cor--branca);
+}
+
+a{
+  text-decoration: none;
+}
+
+.links_footer a{
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+
+.links_footer a:hover {
+  border-bottom: 2px solid var(--cor--branca);
+  transition: 0.6s;
+}
+
+
+/* MEDIA PARA MOBILE */
+@media screen and (max-width: 768px){
+    /* estilizando o menu hamburguer */
+    .image2-section2 {
+      height: 85%;
+    }
+  
+    .navbar-toggler {
+      /* aumenta a largura da linha */
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+      position: relative;
+      transition: 0.5s ease-in-out;
+    }
+  
+    .navbar-toggler,
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+      outline: none;
+      box-shadow: none;
+      border: 0;
+    }
+  
+    .navbar-toggler span {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .toggler-icon {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: var(--cor--branca);
+      border-radius: 1px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.5s ease-in-out;
+    }
+  
+    .middle-bar {
+      margin-top: 0px;
+    }
+  
+    /* quando o navigation é clicado */
+    .navbar-toggler .top-bar {
+      margin-top: 0px;
+      transform: rotate(135deg);
+    }
+  
+    .navbar-toggler .middle-bar {
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+  
+    .navbar-toggler .bottom-bar {
+      margin-top: 0px;
+      transform: rotate(-135deg);
+    }
+  
+    /* Estado quando o navbar é collapsado */
+    .navbar-toggler.collapsed .top-bar {
+      margin-top: -20px;
+      transform: rotate(0deg);
+    }
+  
+    .navbar-toggler.collapsed .middle-bar {
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+  
+    .navbar-toggler.collapsed .bottom-bar {
+      margin-top: 20px;
+      transform: rotate(0deg);
+    }
+  
+    /* Coloca um respiro no navbar */
+    .navbar {
+      padding: 10px 15px 0 15px;
+    }
+  
+    .fixedHeightImg > .img_carousel {
+      height: 50rem;
+    }
+    /* finalizando a estilização do menu hamburguer */
+
+    #meuTexto h1{
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+
+    #meuTexto h2{
+      font-weight: 300;
+    }
+
+  /* SESSAO 1 */
+  #meuTexto{
+    /* padding: 0 !important; */
+  }
+  
+  .sessao_inicial div.box{
+    padding: 0 0 100px 20px !important;
+  }
+  
+  .box{
+    /* justify-content: center !important; */
+  }
+
+  /* SESSAO 4 */
+  .descricao_sessao4 h2{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+
+  /* SESSAO 5 */
+  .sessao5{
+    min-height: 80vh;
+  }
+  
+  .box_sessao5{
+    min-height: 30vh;
+  }
+
+  .marca_fset{
+    padding-bottom: 25px;
+  }
+
+  /* SESSAO 6 */
+  .sessao6{
+    min-height: auto;
+    padding: 35px 0px;
+  }
+
+  #myCarousel{
+    padding: 20px 10px;
+  }
+
+  .carousel_desktop{
+    display: none;
+  }
+
+  .modal-content{
+    min-width: 100px;
+  }
+
+  /* RODAPE */
+
+  .imagem_footer{
+    margin: 15px 0;
+  }
+
+  .descricao_footer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* MEDIA PARA CELULARES MENORES */
+
+@media screen and (max-width: 480px){
+  .marca_empresa{
+    margin-top: 60px;
+    height: 100vh;
+  }
+
+  .sessao3{
+    padding: 10vh 0;
+  }
+
+  .imagem_sessao3 img{
+    margin-top: 30px;
+  }
+}
+
+/* MEDIA PARA DESKTOP */
+@media screen and (min-width: 769px){
+
+  #meuTexto h1{
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  #meuTexto h2{
+    font-weight: 300;
+  }
+
+  .sessao3{
+    background-attachment: fixed;
+  }
+
+  .paragrafo_descricao_sessao3{
+    width: 40%;
+  }
+
+  .descricao_sessao4{
+    padding: 8vh 0;
+  }
+
+  .descricao_sessao4 h2{
+    margin-bottom: 55px;
+  }
+
+  .sessao5{
+    background-attachment: fixed;
+    height: 100vh;
+  }
+
+  .sessao6{
+    background-attachment: fixed;
+  }
+
+  .carousel_mobile{
+    display: none;
+  }
+
+  .footer{
+    background-attachment: fixed;
+  }
+
+  .rodape{
+    text-align: end;
+  }
+}
