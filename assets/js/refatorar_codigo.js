@@ -1,4 +1,5 @@
-let dados_modal = [
+// Dados do modal desktop
+let dados_modal_desktop = [
     {id: 'modalPrincipal1', titulo: 'Uptaste', caminho_imagem: './assets/images/imagens_carousel/uptaste_banner.jpeg'},
     {id: 'modalPrincipal2', titulo: 'Adeste', caminho_imagem: './assets/images/imagens_carousel/adeste_banner.jpeg'},
     {id: 'modalPrincipal3', titulo: 'Anna Pegova', caminho_imagem: './assets/images/imagens_carousel/anna_banner.jpeg'},
@@ -14,10 +15,9 @@ let dados_modal = [
 ]
 
 // Criando o modal desktop
-
 let modal_desktop = document.querySelector('.modal_desktop')
 
-dados_modal.forEach((elemento)=>{
+dados_modal_desktop.forEach((elemento)=>{
     modal_desktop.innerHTML += `
     <div class="modal fade" id="${elemento.id}" tabindex="-2" aria-labelledby="modalPrincipalLabel"
     aria-hidden="true">

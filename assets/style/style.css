@@ -98,6 +98,16 @@
 
 .logo_empresa{
   margin-top: 30px;
+  position: absolute; 
+  z-index: 2; 
+  padding-bottom: 100px;
+}
+
+.marca_empresa{
+  color: white; 
+  position: absolute; 
+  z-index: 2; 
+  padding: 0 0 30px 0;
 }
 
 .logo_main{
@@ -125,8 +135,8 @@
   transition: opacity 1s, transform 1s;
 }
 
-/* SESSÃO 3 ------------------------------------------------*/
-.sessao3 {
+/* SESSÃO 2 ------------------------------------------------*/
+.sessao2 {
   background-image: url("../images/bg_black.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,13 +149,13 @@
   min-height: 100vh;
 }
 
-.video_sessao3{
+.video_sessao2{
   width: 100%;
   height: 350px;
   object-fit: cover;
 }
 
-.titulo_descricao_sessao3{
+.titulo_descricao_sessao2{
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -154,7 +164,7 @@
   text-transform: uppercase;
 }
 
-.paragrafo_descricao_sessao3{
+.paragrafo_descricao_sessao2{
   text-align: center;
   width: 80%;
   margin: 0 auto;
@@ -167,15 +177,15 @@
   margin-bottom: 10px;
 }
 
-/* SESSÃO 4 ------------------------------------------------ */
+/* SESSÃO 3 ------------------------------------------------ */
 
-.paragrafo_sessao4{
+.paragrafo_sessao3{
   margin: 0 20px; 
   text-transform: uppercase; 
   font-size: 14px;
 }
 
-.descricao_sessao4 h2{
+.descricao_sessao3 h2{
   color: var(--cor-preta);
   font-weight: 300; 
   text-align: center;
@@ -187,32 +197,9 @@
   padding: 50px;
 }
 
-/* SESSÃO 5 */
+/* SESSÃO 4 */
 
-.sessao5{
-  background-image: url("../images/bg_black.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 80vh;
-  background-position: center;
-}
-
-.titulo_sessao5{
-  color: var(--cor--branca);
-  font-size: 55px;
-}
-
-.box_sessao5{
-  min-height: 50vh;
-}
-
-.marca_fset{
-  padding-bottom: 40px;
-}
-
-/* SESSÃO 6 */
-
-.sessao6{
+.sessao4{
   background-image: url("../images/bg_white.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -262,6 +249,8 @@
 .modal-content{
   min-width: 800px;
 }
+
+/* RODAPE */
 
 .footer{
   background-image: url("../images/bg_black.jpg");
@@ -402,42 +391,22 @@ a{
     padding: 0 0 100px 20px !important;
   }
 
-  /* SESSAO 3 */
-  .video_sessao3{
+  /* SESSAO 2 */
+  .video_sessao2{
     width: 100%;
     height: 220px;
     object-fit: cover;
   }
   
-  .titulo_descricao_sessao3{
+  .titulo_descricao_sessao2{
     width: 98%;
     font-size: 24px;
   }
 
-  /* SESSAO 4 */
-  .descricao_sessao4 h2{
+  /* SESSAO 3 */
+  .descricao_sessao3 h2{
     width: 80%;
     margin: 0 auto;
-  }
-  
-
-  /* SESSAO 5 */
-  .sessao5{
-    min-height: 80vh;
-  }
-  
-  .box_sessao5{
-    min-height: 30vh;
-  }
-
-  .marca_fset{
-    padding-bottom: 25px;
-  }
-
-  /* SESSAO 6 */
-  .sessao6{
-    min-height: auto;
-    padding: 35px 0px;
   }
 
   #myCarousel{
@@ -453,7 +422,6 @@ a{
   }
 
   /* RODAPE */
-
   .imagem_footer{
     margin: 15px 0;
   }
@@ -480,11 +448,11 @@ a{
     height: 100vh;
   }
 
-  .sessao3{
+  .sessao2{
     padding: 10vh 0;
   }
 
-  .imagem_sessao3 video{
+  .imagem_sessao2 video{
     margin-top: 40px;
   }
 }
@@ -508,7 +476,7 @@ a{
     font-weight: 300;
   }
 
-  .sessao3{
+  .sessao2{
     background-attachment: fixed;
   }
 
@@ -516,25 +484,16 @@ a{
     padding-left: 30px;
   }
 
-  .paragrafo_descricao_sessao3{
+  .paragrafo_descricao_sessao2{
     width: 40%;
   }
 
-  .descricao_sessao4{
+  .descricao_sessao3{
     padding: 8vh 0;
   }
 
-  .descricao_sessao4 h2{
+  .descricao_sessao3 h2{
     margin-bottom: 55px;
-  }
-
-  .sessao5{
-    background-attachment: fixed;
-    height: 100vh;
-  }
-
-  .sessao6{
-    background-attachment: fixed;
   }
 
   .carousel_mobile{
