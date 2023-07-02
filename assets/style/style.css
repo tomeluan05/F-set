@@ -104,38 +104,6 @@
   width: 100px;
 }
 
-/* .texto_sessao1{
-  text-align: center;
-  margin-top: -50px;
-} */
-
-
-/* .sessao1 {
-  background-image: url("../images/bg_black.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-.box_sessao1{
-  min-height: 75vh;
-}
-
-.logo_empresa{
-  margin-top: 30px;
-}
-
-.logo_main{
-  width: 100px;
-}
-
-.texto_sessao1{
-  text-align: center;
-  margin-top: -50px;
-} */
-
 /* fazendo a imagem desaparecer */
 #logo_main {
   opacity: 1;
@@ -542,6 +510,10 @@ a{
 
   .sessao3{
     background-attachment: fixed;
+  }
+
+  .oque_fazemos{
+    padding-left: 30px;
   }
 
   .paragrafo_descricao_sessao3{

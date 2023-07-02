@@ -7,7 +7,7 @@ let dados_modal = [
     {id: 'modalPrincipal6', titulo: 'Blink', caminho_imagem: './assets/images//imagens_carousel/blink_banner.jpeg'},
     {id: 'modalPrincipal7', titulo: 'Ge', caminho_imagem: './assets/images/imagens_carousel/ge_banner.jpeg'},
     {id: 'modalPrincipal8', titulo: 'Volkswagem SUV', caminho_imagem: './assets/images/imagens_carousel/suv_banner.png'},
-    {id: 'modalPrincipal9', titulo: 'Volkswagem Salão', caminho_imagem: './assets/images/imagens_carousel/salao_banner.png'},
+    {id: 'modalPrincipal9', titulo: 'Volkswagem Salão', caminho_imagem: './assets/images/imagens_carousel/salao_banner.jpeg'},
     {id: 'modalPrincipal10', titulo: 'Volkswagem Híbrido', caminho_imagem: './assets/images/imagens_carousel/volks_banner.jpeg'},
     {id: 'modalPrincipal11', titulo: 'Volkswagem Delivery', caminho_imagem: './assets/images/imagens_carousel/caminhao_azul_banner.jpg'},
     {id: 'modalPrincipal12', titulo: 'Volkswagem Caminhões e Ônibus', caminho_imagem: './assets/images/imagens_carousel/feira_banner.png'},
