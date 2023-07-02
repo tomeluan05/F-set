@@ -61,7 +61,8 @@
     </header>
 
     <main>
-      <section class="sessao_inicial row m-0 p-0">
+      <!-- SESSAO 1 -->
+      <section class="sessao_inicial row m-0 p-0" id="inicio">
         <div class="col-12 m-0 p-0">
           <div id="video-container" class="background-sessao">
             <video id="my-video" poster="./assets/images/bg_black.jpg" muted loop>
@@ -79,7 +80,7 @@
           </div>
       
           <div class="box">
-            <div id="meuTexto" style="opacity: 0;" class="conteudo d-flex flex-column justify-content-start align-items-start">
+            <div id="meuTexto" style="opacity: 0;" class="conteudo">
                 <h1>Design de <br> experiências</h1>
                 <h2>físicas, virtuais ou híbridas</h2>
             </div>
@@ -87,43 +88,13 @@
         </div>
       </section>
 
-      <!-- SESSÃ01 -->
-      <!-- <div class="sessao1 d-flex justify-content-center align-items-center" id="inicio">
-        <div class="row container m-0 p-0">
-          <div class="box_sessao1 col-sm-6 col-md-12 d-flex flex-column justify-content-center align-items-center">
-            <div class="logo_empresa">
-              <img id="logo_main" src="./assets/images/logo_white.svg" alt="Logo principal">
-            </div>
-            <div class="texto_sessao1">
-              <div id="meuTexto">
-                <h1>Design de experiências</h1>
-                <h2>físicas, virtuais ou híbridas</h2>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center text-white">
-            <p>2023 - F <span style="font-weight: bold;">·</span> SET</p>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- SESSÃ02 -->
-      <!-- <div class="sessao2 row m-0">
-        <div class="col-12 p-0 m-0" style="background-color: #000;">
-          <video controls preload muted width="100%" id="my-video">
-            <source src="./assets/media/video_apresentacao.webm" type="video/webm" />
-            <source src="./assets/media/video_apresentacao.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div> -->
-
       <!-- SESSÃO3 -->
       <div class="sessao3 row m-0" id="sobre">
         <div class="col-12">
           <div class="row">
             <div class="col-12">
-              <h2 class="titulo_descricao_sessao3">F <span style="font-weight: bold;">·</span> Set. Nossa expertise a serviço da sua experiência.</h2>
-              <p class="paragrafo_descricao_sessao3">Do desenho da jornada do usuário à construção de espaços aonde marcas e pessoas se encontram, a F <span style="font-weight: bold;">·</span> Set conta com um time de especialistas capazes de conceber experiências de marca que vão da idealização e conceituação até a realização.</p>
+              <h2 class="titulo_descricao_sessao3">Nossa expertise <br> a serviço da sua experiência.</h2>
+              <p class="paragrafo_descricao_sessao3">Do desenho da jornada do usuário à construção de espaços <br> aonde marcas e pessoas se encontram, a F <span style="font-weight: bold;">·</span> Set conta com um <br> time de especialistas capazes de conceber experiências de <br> marca que vão da idealização e conceituação até a realização.</p>
             </div>
           </div>
         </div>
@@ -131,18 +102,20 @@
         <div class="col-12">
           <div class="row d-flex justify-content-center m-auto">
             <div class="col-sm-12 col-md-6 imagem_sessao3" style="margin: 0 auto;">
-              <video autoplay controls loop style="width: 100%; height: 100%; object-fit: cover;" poster="./assets/images/img_quem_somos.png">
+              <video class="video_sessao3" autoplay controls loop poster="./assets/images/img_quem_somos.png">
                 <source src="./assets/media/profissionais_f7.mp4" type="video/mp4">
                 <source src="./assets/media/profissionais_f7.webm" type="video/webm">
               </video>
             </div>
             <div class="col-sm-12 col-md-6" style="margin: 40px 0 0 0;">
-              <h2 class="titulo_lista">O que fazemos</h2>
+              <h2 class="titulo_lista mt-3">O que fazemos</h2>
               <ul>
-                <li><i class="bi bi-check-circle" style="margin-right: 10px;"></i>Estudo de viabilidade arquitetônica.</li>
-                <li><i class="bi bi-check-circle" style="margin-right: 10px;"></i>Conceituação, planejamento, montagem e execução de espaços em feiras e eventos.</li>
-                <li><i class="bi bi-check-circle" style="margin-right: 10px;"></i>Criação e desenvolvimento de cenografia.</li>
-                <li><i class="bi bi-check-circle" style="margin-right: 10px;"></i>Experiências digitais e eventos híbridos.</li>
+                <!-- <i class="bi bi-check-circle" style="margin-right: 10px;"></i> -->
+                <li>Estudo de viabilidade arquitetônica.</li>
+                <li>Conceituação, planejamento, montagem e execução de espaços em feiras e eventos.</li>
+                <li>Criação e desenvolvimento de cenografia.</li>
+                <li>Experiências digitais e eventos híbridos.</li>
+                <li>Desenvolvimento de PDV e ativações de marcas.</li>
               </ul>
             </div>
           </div>
@@ -153,14 +126,9 @@
       <div class="sessao4 row m-0">
         <div class="col-12">
           <div class="row">
-            <!-- <div class="container col-11 col-md-5 d-flex align-items-center">
-              <span class="borda_preta"></span>
-              <p class="paragrafo_sessao4">Clientes</p> <span class="borda_preta"></span>
-            </div>
-          </div> -->
 
           <div class="descricao_sessao4 mt-5" id="clientes">
-            <h2>Essas marcas já confiaram suas experiências à F <span style="font-weight: bold;">·</span> Set</h2>
+            <h2>Essas marcas já confiaram suas experiências</h2>
             <div class="container">
               <div class="row mx-auto d-flex justify-content-between align-items-center">
                 <div class="col-sm-4 col-md-2">
@@ -288,22 +256,7 @@
         </div>
       </div>
 
-      <!-- SESSÃO5 -->
-      <!-- <div class="sessao5 d-flex justify-content-center align-items-between" id="cases">
-        <div class="row container m-0 p-0">
-          <div class="box_sessao5 col-md-12 d-flex flex-column justify-content-center align-items-center">
-            <div>
-              <h2 class="titulo_sessao5">Portifólio</h2>
-            </div>
-          </div>
-          <div class="marca_fset d-flex justify-content-center align-items-end text-white">
-            <p>F.SET</p>
-          </div>
-        </div>
-      </div> -->
-
-
-
+      
       <!-- SESSÃ06 -->
       <section class="sessao6 w-100" id="cases">
 
@@ -330,9 +283,9 @@
                       <figure>
                         <img src="./assets/images/imagens_carousel/volks_carousel_dois.png" width="100%"
                           alt="Imagem" data-bs-toggle="modal" data-bs-target="#modalPrincipal1">
-                        <div class="legenda" style="padding: 0 20px;">
+                        <div class="legenda" style="background-color: red; height: 180px;">
                           <figcaption style="font-weight: bold; font-size: 20px;">Uptaste na Naturaltech</figcaption>
-                          <p>O plant based revisitado na feira mais visitada do segmento</p>
+                          <p>A responsabilidade de atuar no lançamento de um automóvel de uma das maiores montadoras do mundo é proporcional ao orgulho de ver o êxito do evento. A F7 foi responsável pela concepção e execução de toda a cenografia que foi palco para a chegada do Taos, um enorme sucesso da Volkswagen.</p>
                         </div>
                       </figure>
                     </div>
@@ -340,9 +293,9 @@
                       <figure>
                         <img src="./assets/images/imagens_carousel/uptaste_carousel.jpeg" width="100%"
                           alt="Imagem" data-bs-toggle="modal" data-bs-target="#modalPrincipal2">
-                        <div class="legenda" style="padding: 0 20px;">
+                        <div class="legenda" style="background-color: green; height: 180px;">
                           <figcaption style="font-weight: bold; font-size: 20px;">Uptaste na Naturaltech</figcaption>
-                          <p>O plant based revisitado na feira mais visitada do segmento</p>
+                          <p style="text-align: justify;">A feira NaturalTech foi o palco do lançamento oficial da Uptaste, a inovadora marca de plant based da Adeste. Um evento pensado e repensado do princípio ao fim, indo da conceituação até a construção do estande.</p>
                         </div>
                       </figure>
                     </div>
@@ -362,7 +315,7 @@
                           alt="Imagem" data-bs-toggle="modal" data-bs-target="#modalPrincipal4">
                         <div class="legenda" style="padding: 0 20px;">
                           <figcaption style="font-weight: bold; font-size: 20px;">Uptaste na Naturaltech</figcaption>
-                          <p>O plant based revisitado na feira mais visitada do segmento</p>
+                          <p>Criação da vitrine da primeira loja da GE Beauty, a marca de Camila Coutinho para o mercado de dermocosméticos, no shopping Haddock Lobo. </p>
                         </div>
                       </figure>
                     </div>
@@ -370,9 +323,9 @@
                       <figure>
                         <img src="./assets/images/imagens_carousel/intermarine_carousel.png" width="100%"
                           alt="Imagem" data-bs-toggle="modal" data-bs-target="#modalPrincipal5">
-                        <div class="legenda" style="padding: 0 20px;">
+                        <div class="legenda" style="height: 250px; background-color: red;">
                           <figcaption style="font-weight: bold; font-size: 20px;">Uptaste na Naturaltech</figcaption>
-                          <p>O plant based revisitado na feira mais visitada do segmento</p>
+                          <p>A Intermarine é o mais importante estaleiro de embarcações de luxo da América Latina. Conceituar, conceber e executar o Intermarine Week foi um desafio à altura de tudo aquilo que a marca vem construindo há décadas, sendo um dos pontos altos do evento a Intermarine Exhibition, uma exposição que narrou, em detalhes, toda a trajetória da Intermarine desde sua fundação. </p>
                         </div>
                       </figure>
                     </div>
@@ -382,7 +335,7 @@
                           alt="Imagem" data-bs-toggle="modal" data-bs-target="#modalPrincipal6">
                         <div class="legenda" style="padding: 0 20px;">
                           <figcaption style="font-weight: bold; font-size: 20px;">Uptaste na Naturaltech</figcaption>
-                          <p>O plant based revisitado na feira mais visitada do segmento</p>
+                          <p>Do planejamento e concepção até a construção do espaço físico, a FSet ajudou a conceber o design de experiência da Adeste na Fisa.</p>
                         </div>
                       </figure>
                     </div>
@@ -400,7 +353,9 @@
                           alt="Imagem" data-bs-toggle="modal" data-bs-target="#modalPrincipal7">
                         <div class="legenda" style="padding: 0 20px;">
                           <figcaption style="font-weight: bold; font-size: 20px;">Uptaste na Naturaltech</figcaption>
-                          <p>O plant based revisitado na feira mais visitada do segmento</p>
+                          <p>Parte do grupo francês Sonepar, a Nortel é a maior distribuidora de suprimentos em MRO (Manutenção, Reparo e Operação) do Brasil. 
+                          A FSet atuou na cenografia de um curso digital voltado para eletricistas, parte de um grande projeto de reposicionamento de marca. 
+                          </p>
                         </div>
                       </figure>
                     </div>
@@ -410,7 +365,7 @@
                           alt="Imagem" data-bs-toggle="modal" data-bs-target="#modalPrincipal8">
                         <div class="legenda" style="padding: 0 20px;">
                           <figcaption style="font-weight: bold; font-size: 20px;">Uptaste na Naturaltech</figcaption>
-                          <p>O plant based revisitado na feira mais visitada do segmento</p>
+                          <p>Conhecida como um espaço de Beauty Care,  a BrinkLab concebeu dois espaços: umA loja do Shopping JK Haddock Lobo e um quiosque  no Shopping Morumbi. A FSet ajudou a conceber tanto o conceito criativo destes espaços, quanto sua viabilidade arquitetônica e execução dos projetos.</p>
                         </div>
                       </figure>
                     </div>
@@ -420,7 +375,7 @@
                           alt="Imagem" data-bs-toggle="modal" data-bs-target="#modalPrincipal9">
                         <div class="legenda" style="padding: 0 20px;">
                           <figcaption style="font-weight: bold; font-size: 20px;">Uptaste na Naturaltech</figcaption>
-                          <p>O plant based revisitado na feira mais visitada do segmento</p>
+                          <p>Traduzir a essência da celebrada marca Anna Pegova na cenografia e vitrine que integrou seu estande na Beauty Fair, uma das maiores feiras dedicadas à exposição e degustação de novos produtos e tendências no segmento de estética.</p>
                         </div>
                       </figure>
                     </div>
@@ -472,280 +427,11 @@
         </div>
 
         <!-- MODAL DESKTOP -->
-        <div class="modal fade" id="modalPrincipal1" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/volks_banner.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
+        <div class="modal_desktop">
         </div>
-
-        <div class="modal fade" id="modalPrincipal2" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/uptaste_banner.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal3" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/tektrade_banner.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal4" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/ge_banner.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal5" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/intermarine_banner.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal6" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images//imagens_carousel/adeste_banner.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal7" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/nortel_banner.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal8" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/blink_banner.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal9" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/anna_banner.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal10" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/feira_banner.png" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal11" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/kanechom_banner.png" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal12" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/imagens_carousel/feira_banner.png" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal13" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/testes/banners/banner_1.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal14" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/testes/banners/banner_2.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal15" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/testes/banners/banner_3.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal16" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/testes/banners/banner_1.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal17" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/testes/banners/banner_4.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="modalPrincipal18" tabindex="-2" aria-labelledby="modalPrincipalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalPrincipalLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-              </div>
-              <div class="modal-body">
-                <img src="./assets/images/testes/banners/banner_5.jpeg" width="100%" alt="Imagem Principal">
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- FINAL DO MODAL DESKTOP -->
 
         <!-- MOBILE -->
-
         <div id="carouselMobile" class="carousel carousel-dark slide d-md-none" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active"
@@ -1104,6 +790,7 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
   </script>
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/refatorar_codigo.js"></script>
 </body>
 
 </html>

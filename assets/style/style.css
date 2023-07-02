@@ -171,12 +171,19 @@
   min-height: 100vh;
 }
 
+.video_sessao3{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
 .titulo_descricao_sessao3{
   text-align: center;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 20px;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 .paragrafo_descricao_sessao3{
@@ -184,17 +191,13 @@
   width: 80%;
   margin: 0 auto;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .titulo_lista{
   margin-left: 25px;
   margin-bottom: 10px;
 }
-
-.sessao3 ul li{
-  list-style: none;
-}
-
 
 /* SESSÃO 4 ------------------------------------------------ */
 
@@ -405,6 +408,15 @@ a{
     }
     /* finalizando a estilização do menu hamburguer */
 
+    #meuTexto{
+      margin-bottom: 5vh;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 25vh;
+      margin-left: 5vw;
+    }
+
     #meuTexto h1{
       font-size: 40px;
       font-weight: 300;
@@ -417,16 +429,21 @@ a{
     }
 
   /* SESSAO 1 */
-  #meuTexto{
-    /* padding: 0 !important; */
-  }
   
   .sessao_inicial div.box{
     padding: 0 0 100px 20px !important;
   }
+
+  /* SESSAO 3 */
+  .video_sessao3{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
   
-  .box{
-    /* justify-content: center !important; */
+  .titulo_descricao_sessao3{
+    width: 98%;
+    font-size: 24px;
   }
 
   /* SESSAO 4 */
@@ -506,6 +523,11 @@ a{
 
 /* MEDIA PARA DESKTOP */
 @media screen and (min-width: 769px){
+
+  #meuTexto{
+    margin-bottom: 28vh;  
+    margin-left: 8vw; 
+  }
 
   #meuTexto h1{
     font-size: 70px;
