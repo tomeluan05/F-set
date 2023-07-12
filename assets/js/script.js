@@ -33,7 +33,7 @@ window.addEventListener('load', ()=>{
   setTimeout(() => {
     let image = document.querySelector('#logo_menu')
     image.style.opacity = '1'
-  }, 2000);
+  }, 1500);
 })
 
 
@@ -45,7 +45,7 @@ window.addEventListener('load', function() {
     meuTexto.style.transform = 'translateY(0)';
     let imagem = document.querySelector('#logo_main')
     imagem.style.display = 'none'
-  }, 3000);
+  }, 2500);
 });
 
 // Carregar o vídeo
@@ -53,10 +53,12 @@ window.addEventListener('load', function() {
   setTimeout(function() {
     var video = document.getElementById('my-video');
     video.play();
+    if(window.innerWidth <= 768){
+      video.setAttribute('poster', '/assets/media/teste2.gif')
+    }
     document.body.classList.add('video-loaded');
-  }, 3500);
+  }, 3000);
 });
-
 
 // Fazer o efeito suave ao navegar dentro da página através dos menus
 
