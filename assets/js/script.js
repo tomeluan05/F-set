@@ -58,6 +58,7 @@ window.addEventListener('load', function() {
     }
     document.body.classList.add('video-loaded');
   }, 3000);
+  
 // });
 
 // Fazer o efeito suave ao navegar dentro da página através dos menus
