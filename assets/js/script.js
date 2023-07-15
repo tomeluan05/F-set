@@ -49,7 +49,7 @@ window.addEventListener('load', function() {
 });
 
 // Carregar o vídeo
-window.addEventListener('load', function() {
+// window.addEventListener('load', function() {
   setTimeout(function() {
     var video = document.getElementById('my-video');
     video.play();
@@ -58,7 +58,7 @@ window.addEventListener('load', function() {
     }
     document.body.classList.add('video-loaded');
   }, 3000);
-});
+// });
 
 // Fazer o efeito suave ao navegar dentro da página através dos menus
 

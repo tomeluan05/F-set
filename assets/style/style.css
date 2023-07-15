@@ -137,7 +137,7 @@
 
 /* SESSÃO 2 ------------------------------------------------*/
 .sessao2 {
-  background-image: url("../images/bg_black.jpg");
+  background-image: url("../images/bg_black.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -200,7 +200,7 @@
 /* SESSÃO 4 */
 
 .sessao4{
-  background-image: url("../images/bg_white.jpg");
+  background-image: url("../images/bg_white.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -251,7 +251,7 @@
 
 /* RODAPE */
 .footer{
-  background-image: url("../images/bg_black.jpg");
+  background-image: url("../images/bg_black.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
