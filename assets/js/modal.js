@@ -24,7 +24,7 @@ dados_modal_desktop.forEach((elemento)=>{
   <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="modalPrincipalLabel">${elemento.titulo}</h3>
+        <h3 class="modal-title" id="modalPrincipalLabel${elemento.id}">${elemento.titulo}</h3>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
       </div>
       <div class="modal-body">
