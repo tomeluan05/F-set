@@ -28,7 +28,7 @@ dados_modal_desktop.forEach((elemento)=>{
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
       </div>
       <div class="modal-body">
-        <img src="${elemento.caminho_imagem}" width="100%" alt="Imagem Principal">
+        <img class="imagens_modal" src="${elemento.caminho_imagem}" alt="Imagens do modal">
       </div>
     </div>
   </div>

@@ -231,6 +231,11 @@
   width: 500px;
 }
 
+.imagens_modal{
+  width: 766px; 
+  height: 390px;
+}
+
 .container-lg img{
   width: 100%;
   padding: 15px;
@@ -417,6 +422,14 @@ a{
 
   .modal-content{
     min-width: 100px;
+  }
+
+  /* SESSAO 4 */
+
+  .imagens_modal{
+    width: 380px; 
+    height: 244px;
+    margin: 0 auto;
   }
 
   /* RODAPE */
